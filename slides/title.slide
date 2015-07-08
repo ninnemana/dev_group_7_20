@@ -1,0 +1,26 @@
+Introduction to Go
+Subtitle of document
+18:00 20 Jul 2015
+Tags: go, golang
+
+Alex Ninneman
+Software Engineer, CURT Manufacturing
+alex@ninneman.org
+http://github.com/ninnemana
+@ninnemana
+
+* Why Go?
+
+- It's fast
+- Although it is compiled, Go is also a garbage-collected language
+- Built in concurrency
+- Statically typed
+- Documentation as a standard feature
+- Rich standard library, including fully featured web server
+
+
+* Hello Go!
+
+.code hello_world.go
+
+.code hello_world.cpp
