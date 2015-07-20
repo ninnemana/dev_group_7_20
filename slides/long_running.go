@@ -1,19 +1,18 @@
 package main
 
 import (
-	"log"
-	"math/rand"
+	"fmt"
 	"time"
 )
 
-func runner() {
-	time.Sleep(time.Duration(rand.Intn(10) * time.Millisecond))
-	log.Println("ran")
+func say(s string) {
+	for i := 0; i < 5; i++ {
+		time.Sleep(100 * time.Millisecond)
+		fmt.Println(s)
+	}
 }
 
 func main() {
-	for index := 0; index < 10; index++ {
-		go runner()
-	}
-
+	go say("world")
+	say("hello")
 }
