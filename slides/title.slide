@@ -75,7 +75,6 @@ Example
 
 * Error Handling
 
-
 .play error_handling.go
 
 * Public/Private Variables
@@ -85,7 +84,10 @@ Example
 
 .code -edit exported.go
 
-
 * Classes ???
 
 .code struct_dec.go
+
+* Interfaces
+
+.code interfaces.go
