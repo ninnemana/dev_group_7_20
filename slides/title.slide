@@ -1,5 +1,4 @@
 Introduction to Go
-Subtitle of document
 18:00 20 Jul 2015
 Tags: go, golang
 
@@ -8,6 +7,7 @@ Software Engineer, CURT Manufacturing
 alex@ninneman.org
 http://github.com/ninnemana
 @ninnemana
+
 
 * Why Go?
 
@@ -18,9 +18,74 @@ http://github.com/ninnemana
 - Documentation as a standard feature
 - Rich standard library, including fully featured web server
 
+* Tooling Options
+- go vet (audits code for correctness)
+- go fmt
+- go test
+- go doc
+- lots more from the community
 
-* Hello Go!
+* Standard Library
 
-.code hello_world.go
+Provides lots of built in functionality
+- encoding/json & encoding/xml
+- testing
+- net/http
+- net/http/httptest
 
-.code hello_world.cpp
+Easy external library dependency handling
+
+* Concurrency
+
+Goroutines
+
+- lightweight background processes
+
+Channels
+
+- transfer data around processes
+
+Example
+
+    Go net/http server handles each request as goroutine
+
+.link http://blog.golang.org/pipelines
+
+* Deployment
+- Compiles to single executable
+- Currently no daemon support
+- Cross compilation
+- Simple setup with CI/CD services
+- Docker has native support for go programs
+
+.image docker-logo.png
+
+* Basic Overview
+
+.play hello_world.go
+
+
+* Variable Declaration
+
+.code variable_dec.go
+
+* Function Declaration
+
+.code func_dec.go
+
+* Error Handling
+
+
+.play error_handling.go
+
+* Public/Private Variables
+
+- Functions and Variables that start with lowercase character are private
+- Start with uppercase character are public
+
+.code -edit exported.go
+
+
+* Classes ???
+
+.code struct_dec.go
