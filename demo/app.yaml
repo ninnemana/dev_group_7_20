@@ -15,7 +15,7 @@ handlers:
   static_dir: dist/assets
 - url: /styles
   static_dir: dist/styles
-- url: /
+- url: /.*
   script: _go_app
 
 skip_files:
