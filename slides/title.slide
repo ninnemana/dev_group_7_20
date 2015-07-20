@@ -64,6 +64,7 @@ Example
 
 .play hello_world.go
 
+.code hello_world.cpp
 
 * Variable Declaration
 
@@ -91,3 +92,7 @@ Example
 * Interfaces
 
 .code interfaces.go
+
+* Goroutines
+
+.play long_running.go
