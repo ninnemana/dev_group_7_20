@@ -1,0 +1,27 @@
+application: ninneman-cvdev
+version: 1
+runtime: go
+api_version: go1
+
+handlers:
+- url: /scripts
+  static_dir: dist/scripts
+- url: /fonts
+  static_dir: dist/fonts
+  mime_type: application/x-font-otf
+- url: /lib
+  static_dir: dist/lib
+- url: /assets
+  static_dir: dist/assets
+- url: /styles
+  static_dir: dist/styles
+- url: /
+  script: _go_app
+
+skip_files:
+- ^node_modules$
+- ^design$
+- ^.tmp$
+- ^.sass-cache$
+- ^test$
+- ^public$

@@ -1,0 +1,39 @@
+<md-content>
+	<h1>Books</h1>
+	<md-list>
+
+		<md-list-item class="md-3-line" ng-repeat="book in books">
+			<div class="md-list-item-text" layout="row" layout-align="start space-between">
+				<span flex="5"></span>
+				<div flex="65">
+					<h3>{{ book.title }} - {{ book.author }}</h3>
+					<p>{{ book.date_added }}</p>
+				</div>
+				<div flex="30">
+					<md-button href="/book/{{ book.id }}" aria-label="edit">
+				        <md-icon>
+				            <i class="material-icons">edit</i>
+				        </md-icon>
+				    </md-button>
+					<md-button aria-label="edit" ng-click="delete(book)">
+				        <md-icon>
+				            <i class="material-icons">delete</i>
+				        </md-icon>
+				    </md-button>
+				</div>
+			</div>
+			<md-divider></md-divider>
+		</md-list-item>
+
+	</md-list>
+
+
+</md-content>
+
+<div layout="row" layout-align="end end">
+    <md-button href="/book/" aria-label="menu" class="md-fab md-primary" layout-align="start end">
+        <md-icon>
+            <i class="material-icons">add</i>
+        </md-icon>
+    </md-button>
+</div>

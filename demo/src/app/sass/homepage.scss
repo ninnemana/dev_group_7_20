@@ -1,0 +1,401 @@
+.thumbnail {
+  color:#dddddd;
+}
+
+$carouselHeight: 330px;
+.carousel-container{
+	overflow:hidden;
+	background: transparent url("/assets/images/bgblue.png") repeat scroll 0% 0%;
+	margin-bottom:20px;
+	padding-left:3%;
+	padding-right:3%;
+
+    > div:first-child{
+        max-width: 1280px;
+        margin:auto;
+        .carousel{
+            float:left;
+            max-width: 80%;
+        }
+        .promotion-banner{
+            float:right;
+        }
+    }
+
+	.carousel-caption{
+		text-align:left;
+	}
+	.carousel-indicators,
+    .carousel-caption,
+    .carousel-inner img,
+    .carousel-control,
+    .carousel-control.left{
+		display:none;
+	}
+    .carousel-inner img{
+        height: 100%;
+    }
+	.carousel-control.right{
+		right: 20%;
+		background-image: none;
+	}
+	.promotion-banner{
+		margin: 10px auto;
+		.promotion-text {
+			h2, .subheading{
+				color: #ffffff;
+				float: left;
+				margin: 0 auto;
+				text-align:center;
+				font-size:24px;
+			}
+			.subheading{
+				display:inline-block;
+				width:100%;
+				font-size:14px;
+			}
+		}
+	}
+}
+
+// Category tabs
+.md-tab-themed{
+	padding:10px;
+}
+
+md-tabs.md-default-theme md-tab{
+	color: $font_grey;
+	&.active{
+		color: $maroon;
+	}
+}
+
+// category tabs
+.categories-tabs{
+    max-width: 1280px;
+    margin:auto;
+	.categories-heading{
+		font-size: 2.014em;
+		@include font(tablet-gothic, bold);
+		color: $black;
+  		line-height: 1.579;
+  		margin-top:0;
+	}
+
+	md-tab-item {
+		span{
+			font-size: 18px;
+			@include font(tablet-gothic, bold);
+			color: $black;
+			text-transform: uppercase;
+			line-height: 1;
+		}
+
+		&[aria-selected=true] span{
+			color: $maroon;
+		}
+	}
+}
+
+// category tabs content
+.category-content{
+    max-width: 1280px;
+    margin:auto;
+	.md-header{
+		display:none;
+	}
+	md-tabs-wrapper{
+		display:none;
+	}
+	md-grid-tile.sub-category{
+		cursor: pointer;
+		overflow:hidden;
+		border: 1px solid rgb(211, 213, 217);
+		border-radius: 6px;
+		background-color: white;
+		width: 250px;
+		height: 250px;
+
+		&:hover, &:active{
+			background-color: $light_grey;
+		}
+
+		md-grid-tile-body{
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position-x: 0px;
+			background-position-y: -40px;
+			background-color: transparent;
+			width: 100%;
+			height: 80%;
+
+		}
+
+		md-grid-tile-footer{
+			background: transparent;
+			height: 60px;
+			figcaption{
+				width: 100%;
+				h3,span{
+					display: inline-block;
+					text-align:center;
+					width:100%;
+					margin:0;
+					font-size:14px;
+					color: $font_grey;
+				}
+				h3{
+					font-size:16px;
+					color: $maroon;
+				}
+			}
+		}
+	}
+}
+
+
+// top brands
+.top-brands-container{
+    max-width: 1280px;
+    margin:auto;
+	background: white;
+	margin-bottom: 10px;
+
+	h3{
+		font-size: 2.014px;
+		@include font(tablet-gothic, bold);
+		color: $black;
+		line-height: 1.579;
+		text-align: center;
+	}
+
+	> div{
+		width: 40%;
+		margin:auto;
+		img{
+			width: 100%;
+		}
+	}
+}
+
+// reviews
+.reviews{
+    max-width: 1280px;
+	background-color: $light_grey;
+	margin: 0 auto;
+
+	a.read-more{
+		border: 1px $black solid;
+		border-radius: 3px;
+		background: transparent;
+		font-size: 18px;
+		@include font(tablet-gothic, bold);
+		color: $black;
+		transition: all 0.1s ease-in;
+		display:block;
+		width: 80%;
+		margin: 10px auto;
+
+		&:hover{
+			color: white;
+			background: $black;
+		}
+	}
+	h3{
+		text-align:center;
+		font-size: 38px;
+		@include font(tablet-gothic, bold);
+		color: $black;
+		line-height: 1.579;
+	}
+	.review-container{
+		float:left;
+		margin:0;
+		margin-top:20px;
+		text-align:left;
+
+		.review-star{
+			@include font(awesome);
+			font-size: 22px;
+			color: $maroon;
+			line-height: 1.182;
+		}
+		.review-subject{
+			margin-left:10px;
+			@include font(tablet-gothic,bold);
+			font-size: 22px;
+		}
+		.review-text{
+			@include font(tablet-gothic);
+			font-size: 18px;
+			.quote-large{
+				font-size:18px;
+				display:inline;
+			}
+		}
+		.person{
+			@include font(tablet-gothic, bold);
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+	}
+
+	> div{
+		.divider{
+			height:2px;
+			width: 70%;
+			margin:auto;
+			background-color: rgb(199, 199, 199);
+			box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.004);
+		}
+		&:last-child{
+			.divider{
+				display:none;
+			}
+		}
+	}
+}
+
+.about-segment{
+	md-content{
+        max-width: 1280px;
+        margin:auto;
+		background-color: transparent;
+
+		h3, p{
+			color: rgb(255, 255, 255);
+			text-align:center;
+			@include font(tablet-gothic);
+		}
+		h3{
+			font-size: 2.014em;
+			font-weight:700;
+			text-transform: uppercase;
+			line-height: 1.579;
+		}
+		p{
+			font-size: 1.375em;
+			line-height: 1.182;
+		}
+
+		.videoWrapper {
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 */
+			padding-top: 25px;
+			height: 0;
+		}
+		.videoWrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+@media (min-width:768px){
+	.no-padding-sm{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	.carousel-container {
+		height:$carouselHeight;
+		.carousel-indicators, .carousel-caption, .carousel-inner{
+			display:block;
+			img{
+				display:block;
+			}
+
+			.item{
+				max-width: 100%;
+			}
+		}
+		.carousel-caption{
+			bottom: 0px;
+			h1{
+				padding-bottom: 0;
+				margin-bottom:0;
+				font-size: 26px;
+			}
+			h3{
+				margin-top:0;
+				font-size: 16px;
+			}
+		}
+		.carousel-control.right{
+			display: block;
+            right:0;
+            width:10%;
+		}
+		.promotion-banner{
+			height:100%;
+			z-index:11;
+			font-size:28px;
+			margin: 0 auto;
+			display:table;
+			min-height: 300px;
+			width: 20%;
+
+			.promotion-text{
+				height: 100%;
+				display: table-cell;
+                float:none;
+				vertical-align:middle;
+
+				h2{
+					padding:0px;
+					margin-top:10px;
+					margin-bottom:10px;
+				}
+			}
+
+		}
+	}
+
+
+	.top-brands-container {
+		margin-top: 10px;
+		h3{
+			margin:54px auto 37px auto;
+		}
+	}
+
+	.reviews{
+		a.read-more{
+			width: auto;
+			margin: 0 auto auto 10px;
+			display:inline;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.carousel-container{
+		.carousel-caption{
+			bottom: 10px;
+			h1{
+				padding-bottom: 0;
+				margin-bottom:5px;
+				font-size: 38px;
+			}
+			h3{
+				margin-top:10px;
+				font-size: 24px;
+			}
+		}
+		.promotion-banner .promotion-text{
+			font-size:20px;
+		}
+	}
+	.subheading{
+		font-size:18px !important;
+	}
+}
+
+@media (min-width:1200px){
+	.carousel-container{
+		padding-left:10%;
+		padding-right:10%;
+	}
+}

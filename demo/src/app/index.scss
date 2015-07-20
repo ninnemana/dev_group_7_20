@@ -1,0 +1,42 @@
+
+// Imports for other page specific styles
+//
+@import "./sass/_variables";
+@import "./sass/_mixins";
+@import "./sass/fonts";
+@import "./sass/_table";
+@import "./sass/_classes";
+
+@import "./sass/layout";
+@import "./sass/homepage";
+
+
+/*
+ * Note: These are just for misc stylings. Otherwise use the appropriate import above.
+ * Note: This is not for the layout of the site, that is in layout.scss
+ */
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+// Little hack to get the browser sync message to not show where the hamburger menu is on the top nav
+#__bs_notify__{
+	bottom:0px !important;
+	right:0px !important;
+	top: initial !important;
+	opacity: .8;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 0px !important;
+}

@@ -1,0 +1,64 @@
+$font-stack: (
+	group: tablet-gothic,
+	id: light,
+	font: ('tablet-gothic-semi-condensed', san-serif ),
+	weight: 200,
+	style: normal
+),
+(	group: tablet-gothic,
+	id: light-italic,
+	font: ('tablet-gothic-semi-condensed', san-serif ),
+	weight: 200,
+	style: italic
+),
+(	group: tablet-gothic,
+	id: regular,
+	font: ('tablet-gothic-semi-condensed', san-serif),
+	weight: 400,
+	style: normal
+),
+(	group: tablet-gothic,
+	id: regular-italic,
+	font: ('tablet-gothic-semi-condensed', san-serif),
+	weight: 400,
+	style: italic
+),
+(	group: tablet-gothic,
+	id: bold,
+	font: ('tablet-gothic-semi-condensed', san-serif),
+	weight: 700,
+	style: normal
+),
+(	group: tablet-gothic,
+	id: extra-bold, 
+	font: ('tablet-gothic-semi-condensed', san-serif),
+	weight: 900,
+	style: normal
+),
+(	group: tablet-gothic,
+	id: bold-italic,
+	font: ('tablet-gothic-semi-condensed', san-serif),
+	weight: 400,
+	style: italic
+),
+(
+	group: clarendon,
+	id: regular,
+	font: ('Clarendon LT W01', serif),
+	weight: 200,
+	style: normal
+),
+(
+	group: code,
+	id: regular,
+	font: (monospace),
+	weight: 400,
+	style: normal
+),
+(
+	group: awesome,
+	id: regular,
+	font: ('FontAwesome'),
+	weight: 400,
+	style: normal
+);
