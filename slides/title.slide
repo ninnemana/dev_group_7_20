@@ -10,13 +10,14 @@ http://github.com/ninnemana
 
 
 * Why Go?
-
 - It's fast
 - Although it is compiled, Go is also a garbage-collected language
 - Built in concurrency
 - Statically typed
 - Documentation as a standard feature
 - Rich standard library, including fully featured web server
+
+.image gophercolor.jpg _ 450
 
 * Tooling Options
 - go vet (audits code for correctness)
@@ -98,3 +99,13 @@ Example
 .play long_running.go
 
 * Demo Time
+
+* References
+
+.link golang.org
+.link tour.golang.org
+.link godoc.org
+
+Go on App Engine
+
+.link https://cloud.google.com/appengine/docs/go/
